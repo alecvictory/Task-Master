@@ -2,15 +2,16 @@ import { ProxyState } from '../AppState.js'
 import { generateId } from '../Utils/GenerateId.js'
 
 export default class Task {
-    constructor(name, listId, id = generateId()) {
+    constructor(name, listId, id = generateId(), complete = false, checked = '') {
         this.name = name
         this.listId = listId
         this.id = id
+        this.complete = complete
+        this.checked = checked
     }
 
     get Template() {
         return `<li>
-        <button id="checkbox" onclick="save()">
         <input type="checkbox'>
         ${this.name}
         </input>

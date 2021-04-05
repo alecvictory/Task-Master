@@ -8,7 +8,7 @@ export function saveState() {
         lists: ProxyState.lists,
         tasks: ProxyState.tasks
     }))
-    localStorage.setItem('checkbox', checkbox.checked);
+    // localStorage.setItem('checkbox', checkbox.checked);
 }
 
 export function loadState() {
@@ -17,6 +17,6 @@ export function loadState() {
         ProxyState.lists = data.lists.map(list => new List(list.name, list.color, list.id));
         ProxyState.tasks = data.tasks.map(task => new Task(task.name, task.listId, task.id));
     }
-    let checked = JSON.parse(localStorage.getItem('checkbox'));
-    document.getElementById('checkbox').checked = checked;
+    // let checked = JSON.parse(localStorage.getItem('checkbox'));
+    // document.getElementById('checkbox').checked = checked;
 }

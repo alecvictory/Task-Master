@@ -9,6 +9,9 @@ class AppState extends EventEmitter {
 
   /** @type {Task[]} */
   tasks = []
+
+  // /** @type {Checkbox[]} */
+  // checkbox = ''
 }
 
 export const ProxyState = new Proxy(new AppState(), {
@@ -22,4 +25,5 @@ export const ProxyState = new Proxy(new AppState(), {
     target.emit(prop, value)
     return true
   }
+
 })
