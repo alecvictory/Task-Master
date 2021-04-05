@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>checkpoint-3</title>
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
+                <span class="ml-2">TaskMaster</span>
+            </a>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <form class="form-inline d-flex" onsubmit="app.listsController.addList()">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="" class="sr-only"></label>
+                        <input type="text" name="" class="form-control" id="list" minlength="3" maxlength="15"
+                            placeholder="List Name..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Color:</label>
+                        <select class="form-control" id="color">
+                            <option value='primary'>blue</option>
+                            <option value="warning">salmon</option>
+                            <option value="secondary">pink</option>
+                            <option value="info">teal</option>
+                            <option value="light">white</option>
+                        </select>
+                    </div>
+                    <button type="submit" title="add list" class="btn btn-primary mb-2">Create</button>
+                </form>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <!-- LISTS STARTS HERE -->
+            <div class="row bg-white p-5 rounded" id="lists">
+            </div>
+        </div>
+        <footer class="container-fluid bg-dark text-light">
+            <div class="row text-center">
+                <div class="col">
+                    <p><small>COMPLETE YOUR TASKS</small></p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
