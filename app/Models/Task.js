@@ -10,11 +10,9 @@ export default class Task {
 
     get Template() {
         return `<li>
-        <button id="checkbox" onclick="save()">
-        <input type="checkbox'>
+        <input type='checkbox'>
         ${this.name}
         </input>
-        </button>
         <button  onclick="app.tasksController.deleteTask('${this.id}')">
             <i class="fa fa-trash ml-2"></i>
         </button>
