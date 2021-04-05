@@ -21,4 +21,8 @@ export default class TasksController {
         tasksService.deleteTask(id)
     }
 
+    save() {
+        tasksService.save()
+    }
+
 }

@@ -16,6 +16,11 @@ class TasksService {
         }
         saveState()
     }
+
+    save() {
+        let checkbox = document.getElementById('checkbox');
+        saveState();
+    }
 }
 
 export const tasksService = new TasksService();
