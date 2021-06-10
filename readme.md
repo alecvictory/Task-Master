@@ -1,20 +1,3 @@
-checkpoint-3
-============
+https://alecvictory.github.io/Task-Master/
 
-### Get Started
-
-```terminal
-> npm i
-> npm run sass
-> npm run serve
-```
-
-### AuthConfig
-
-Fill in your AuthConfig with keys from [Auth0](https://auth0.com/)
-
-```javascript
-export const domain = '' 
-export const clientId = '' 
-export const audience = '' 
-```
+In this application I learned how to use the MVC design pattern to create a to-do board with lists and tasks
